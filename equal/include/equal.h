@@ -20,7 +20,7 @@ namespace graal {
  * @param first2 Ponteiro para o primeiro elemento do range.
  * @param eq Função para comparar dois valores.
  * @param it Ponteiro para percorrer o range.
- * @param count Armazenar a quantidade de elementos que testaram falso para p.
+ * @param count Armazenar a quantidade de elementos que testaram falso para a função eq.
  * 
  * @return Verdadeiro se os ranges são iguais, falso caso contrário.
  */
@@ -53,7 +53,7 @@ bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, Equal eq)
  * @param last2 Ponteiro para a posição logo após o último elemento do range.
  * @param eq Função para comparar dois valores.
  * @param it Ponteiro para percorrer o range.
- * @param count Armazenar a quantidade de elementos que testaram falso para p.
+ * @param count Armazenar a quantidade de elementos que testaram falso para a função eq.
  * 
  * @return Verdadeiro se os ranges são iguais, falso caso contrário.
  */

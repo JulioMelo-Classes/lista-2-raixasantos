@@ -11,13 +11,30 @@ using std::sort;
 namespace graal {
 
 /*! 
- * TODO: documentação no estilo doxygen
+ * @tparam InputIt Iterator para o range.
+ * @tparam UnaryPredicate Tipo de uma função bool p(const string &b)
+ * 
+ * @param first Ponteiro para o primeiro elemento do range.
+ * @param last Ponteiro para a posição logo após o último elemento do range.
+ * @param firstTrue Ponteiro para a posição do elemento do range, que possivelmente testou verdadeiro.
+ * 
+ * @return Um firstTrue apontando para a posição do elemento do range, que possivelmente o predicado testou verdadeiro. 
  */
 template<class InputIt, class UnaryPredicate>
 InputIt find_if(InputIt first, InputIt last, UnaryPredicate p)
 {
-    // TODO
-    return first;
+    InputIt firstTrue = last;
+
+    for(InputIt it = first; it != last; it++)
+    {
+        if(p(*it))
+        {
+            firstTrue = it;
+            return firstTrue;
+        }
+    }
+
+    return firstTrue;
 }
 
 }

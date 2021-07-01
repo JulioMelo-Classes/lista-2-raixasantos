@@ -24,6 +24,10 @@ namespace graal {
     
 
  */
+
+ /*
+ ok
+ */
 template<class InputIt, class UnaryPredicate>
 bool all_of(InputIt first, InputIt last, UnaryPredicate p)
 {

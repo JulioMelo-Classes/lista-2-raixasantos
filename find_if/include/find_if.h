@@ -20,6 +20,9 @@ namespace graal {
  * 
  * @return Um firstTrue apontando para a posição do elemento do range, que possivelmente o predicado testou verdadeiro. 
  */
+ /*
+ blz
+ */
 template<class InputIt, class UnaryPredicate>
 InputIt find_if(InputIt first, InputIt last, UnaryPredicate p)
 {

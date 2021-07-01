@@ -23,6 +23,9 @@ namespace graal {
  * 
  * @return Um firstTrue apontando para a posição do elemento do range, que possivelmente o predicado testou verdadeiro. 
  */
+ /*
+ ok
+ */
 template<class InputIt, class T, class Equal>
 InputIt find(InputIt first, InputIt last, const T& value, Equal eq)
 {

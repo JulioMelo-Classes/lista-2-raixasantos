@@ -22,6 +22,9 @@ namespace graal {
  * 
  * @return void
  */
+ /*
+ ok
+ */
 template<class ForwardIt, class Comparison>
 void sort(ForwardIt first, ForwardIt last, Comparison cmp)
 {

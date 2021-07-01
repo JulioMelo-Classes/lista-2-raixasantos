@@ -21,6 +21,9 @@ namespace graal {
  *
  * @return void
  */
+ /*
+ ok
+ */
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)
 {
